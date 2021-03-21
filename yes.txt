@@ -1,0 +1,165 @@
+(""" @client.event
+
+async def on_ready():
+  print(f"I am ready to go - {client.user.name}")
+  await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f" Out For (Farooq)"))
+@client.event
+async def on_message(message):
+    x = message.content.lower()
+    if message.author == client.user:
+
+        return
+    if message.author.bot: return
+    if x =="noob":
+        await message.channel.send(random.choice(noob))
+        await client.process_commands(message)
+    
+    if x =="fish":
+        await message.channel.send(random.choice(fish))
+        await client.process_commands(message)
+    if x =="xd":
+        await message.channel.send("xD")
+        await client.process_commands(message)
+    if x =="big":
+        await message.channel.send("bot pleb boomer scammer")
+        await client.process_commands(message)
+    if x =="pro":
+        await message.channel.send(random.choice(pro))
+        await client.process_commands(message)
+    if x =="english":
+        await message.channel.send("me as awoosoome in ingliss")
+        await client.process_commands(message)
+    if x =="january":
+        await message.channel.send("my birthday is on 4th january ")
+        await client.process_commands(message)
+    if x =="i am alone":
+        await message.channel.send(random.choice(i_am_alone))
+        await client.process_commands(message)
+    if x =="farooq":
+        await message.channel.send("""
+hello i am farooq,
+i am a chat bot
+i will reply to you if you use certain keywords
+:slight_smile:
+      
+        """)
+        await client.process_commands(message)
+    if x =="kill":
+        await message.channel.send(random.choice(kill))
+        await client.process_commands(message)
+    if x =="humza":
+        await message.channel.send("""
+he is a friend 
+write 'who is humza' to know more """)
+        await client.process_commands(message)
+    
+    if x =="virus":
+        await message.channel.send(random.choice(virus))
+        await client.process_commands(message)
+    if x =="bye":
+        await message.channel.send("bye :wave: ")
+        await client.process_commands(message)
+    if x =="hi"  :
+        await message.channel.send(" hi ")
+        await client.process_commands(message)
+    if x =="sup"  :
+        await message.channel.send(" looking at your messages rn  ")
+        await client.process_commands(message)
+    if x =="hey"  :
+        await message.channel.send(" wattup m8  ")
+        await client.process_commands(message)
+    if x =="who is humza"  :
+        await message.channel.send("""
+Humza is a sister bot known for its bad english
+get it here 
+https://discord.com/api/oauth2/authorize?client_id=807964762541129779&permissions=0&scope=bot  """)
+    await client.process_commands(message)
+    if x =="lol"  :
+        await message.channel.send(" ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎:regional_indicator_l: :regional_indicator_o: :regional_indicator_l: ‎‎‎‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ")
+        await client.process_commands(message)
+    z = ["Why did you ping me idiot? " , "me no like ping" , "stop pinging me"]
+    mention = f'<@!{client.user.id}>'
+    if mention in message.content:
+        await message.channel.send(random.choice(z))
+        await client.process_commands(message)
+    abc = ["get good lol " , "you below average" , "baddd"]
+
+    if x =="lookrate":
+      a = random.randrange(0 , 100)
+      if a > 90:
+          await message.channel.send(f"You Are Rated {a}  hot :flushed:")
+      if a > 60 and a < 90 :
+          await message.channel.send(f"You are rated {a}  ok ig")
+      if a > 30 and a < 60 :
+        await message.channel.send(f"You are rated {a}   ||{random.choice(abc)}||" )
+      if a < 30:
+        await message.channel.send(f"You are rated {a}  eww :nauseated_face::face_vomiting: ")
+        await client.process_commands(message)
+    if x =="updates"  :
+      await message.channel.send(""" 
+lookrate is here use it by saying 'lookrate'
+and more chat trigger commands   """)
+    await client.process_commands(message)
+    if x =="hmm":
+      await message.channel.send("hmm")
+      await client.process_commands(message)
+    if "pog" in x:
+      await message.channel.send("https://media.discordapp.net/attachments/806784097841184809/808077025650278410/ezgif-1-24a2cd6e7522.gif")
+      await client.process_commands(message)
+    if x =="link":
+      await message.channel.send("https://discord.com/api/oauth2/authorize?client_id=782560219083440139&permissions=0&scope=bot")
+      await client.process_commands(message)
+    if x =="ping":
+      await message.channel.send(f"Client Latency: {round(client.latency * 1000)} ms")
+      await client.process_commands(message)
+    if x =="support":
+      await message.channel.send("support server coming soon!!")
+      await client.process_commands(message)
+    
+    #this is test code 
+  
+    hp1 = 100
+    hp2 = 100
+    #new commands
+    if x ==":(":
+      await message.channel.send(":)")
+      await client.process_commands(message)
+
+    if x ==":)":
+      await message.channel.send(":(")
+      await client.process_commands(message)
+
+    if x =="pls rob":
+      await message.channel.send("You Place a bomb on the vault you found in the militiary base, it explodes killing you and your mates and also your bank accounts were destroyed because only you people kept your bank account money there ¯\_(ツ)_/¯")
+      await client.process_commands(message)
+
+    if x == ("Change Log"):
+        embedVar = discord.Embed(title="Change Log", description=f"** {change_log}**", color=0x00ff00)
+        embedVar.add_field(name="**Release Date**", value="2/10/2021", inline=False)
+        await message.channel.send(embed=embedVar)
+    if x == ("changelogs"):
+        embedVar = discord.Embed(title="Change Log", description=f"** {change_log}**", color=0x00ff00)
+        embedVar.add_field(name="**Release Date**", value="2/10/2021", inline=False)
+        await message.channel.send(embed=embedVar)""")
+########################################################################################
+noob = ["ok i am a noob" , "i give up i admit i am the noob" , "i am the noob" ]
+
+fish = ["i am not a fish" , "goldfish?" , "stop calling me fish"]
+
+pro = ["Omar is Pro!" , "Mint is Pro!" , "Stop Calling Me a Pro!"]
+
+i_am_alone = ["Aww Man , Dont be sad" , "I am there for you" , "Are You Scared of Ghosts?"]
+
+kill = ["X_X" , "dead" , "Farooq Tried To Swim in Lava"]
+
+virus = ["humza virus", "Covid-19" , "Covid-20?" ]
+
+death = ["was shot by Skeleton" , "was pricked to death" , "walked into a cactus" , "drowned" , "experienced kinetic energy" , "blew up" , " was blown up by Creeper" , " was killed by [Intentional Game Design]" , " hit the ground too hard" , "fell from a high place" , "fell off a ladder" , "was squashed by a falling anvil" , "found out that the floor was **Lava**" , "went off with a bang" , "tried to swim in lava" , "was struck by lightning" , "was killed by magic" , "starved to death" , "didn't want to live in the same world as Farooq"]
+
+change_log = """
+:star: Added Moderation Commands [ban] [unban] [kick]
+:star: Added Support [support]
+:star: Random Messages For 6 New Commands
+:star: Added Changelog [changelog] or [Change Log]"""
+
+version = 0.02

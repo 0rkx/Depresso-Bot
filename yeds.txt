@@ -1,0 +1,17 @@
+@client.command()
+aysnc def fight(ctx, player) : 
+    await ctx.send(f"{player}, what will you do now? OPTIONS: Fight, Defense, Items, Surrender")
+    def check(m):
+        return m.channel == ctx.channel and m.author == ctx.author
+    response = await client.wait_for('message', check=check)
+    if "defense" in response.content.lower():
+        #Do stuff
+    elif "fight" in response.content.lower():
+        #Do stuff
+    elif "Items" in response.content.lower():
+        #Do stuff
+    elif "Surender" in response.content.lower():
+        #Do stuff
+    elif "end" in response.content.lower():
+        return False
+    return True
